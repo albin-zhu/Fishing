@@ -47,7 +47,7 @@ bool HelloWorld::init()
         return false;
     }
     
-    Energy = 0;
+    Energy = 1000;
     maxEnergy = 1000;
     this->setTouchEnabled(true);
     this->loadTexture();
@@ -96,13 +96,19 @@ void HelloWorld::initUITab()
     float sy = GameConfig::sy;
     CCSprite* energyBox = new CCSprite();
     energyBox->initWithFile("ui_2p_004.png");
-    energyBox->setPosition(ccp(520 * sx, 30 * sy));
     energyBox->setAnchorPoint(ccp(0.5, 0.5));
+    energyBox->setScale(MIN(sx, sy)); // 圆形要等比例缩放
+    energyBox->setPosition(ccp(520 * sx, 30 * sy));
+   
     this->addChild(energyBox);
     
     this->engryPointer = new CCSprite();
     this->engryPointer->initWithFile("ui_2p_005.png");
-    this->engryPointer->setPosition(ccp(520 * sx, 700 * sy));
+    engryPointer->setAnchorPoint(ccp(0.5, 0.5));
+    engryPointer->setScale(MIN(sx, sy)); // 圆形要等比例缩放
+    this->engryPointer->setPosition(ccp(520 * sx, 30 * sy));
+    this->engryPointer->setRotation(180);
+
     this->addChild(this->engryPointer);
     
     
@@ -204,7 +210,7 @@ void HelloWorld::updateGame(cocos2d::CCTime dt)
         if(flue->isCatching)
             continue;
         
-        fish2Sheet->removeChild(flue, false);
+        flue->removeFromParentAndCleanup(false);
         
         Flue *tapFlue = (Flue*)Flue::createWithSpriteFrameName("net01.png");
         tapFlue->setPosition(flue->getPosition());
@@ -224,12 +230,12 @@ void HelloWorld::updateGame(cocos2d::CCTime dt)
 
 void HelloWorld::updateEnermy(int en)
 {
-    Energy += en;
-    
-    if (Energy >= maxEnergy)
+    if (Energy <= 0)
     {
-        Energy = maxEnergy;
+        return;
     }
+    
+    Energy -= en;
     
     float rotation = 180.0 * Energy / maxEnergy;
     
@@ -310,7 +316,7 @@ void HelloWorld::ccTouchesEnded(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEve
     labelBoard->runAction(flueSeq);
     fish2Sheet->addChild(labelBoard);
     
-    this->updateEnermy(rand() %20);
+    this->updateEnermy(rand() % 20);
 }
 
 void HelloWorld::ShowFlue(cocos2d::CCNode *sender)
