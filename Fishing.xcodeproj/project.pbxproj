@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		B13DA44016D1DB5900BF5AFA /* number.png in Resources */ = {isa = PBXBuildFile; fileRef = B13DA43F16D1DB5900BF5AFA /* number.png */; };
+		B1C7512716D3635000507B16 /* Fish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7511E16D3635000507B16 /* Fish.cpp */; };
+		B1C7512816D3635000507B16 /* Flue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7512016D3635000507B16 /* Flue.cpp */; };
+		B1C7512916D3635000507B16 /* UINumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7512316D3635000507B16 /* UINumber.cpp */; };
+		B1C7512A16D3635000507B16 /* UIRollNum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1C7512516D3635000507B16 /* UIRollNum.cpp */; };
 		B1F1DCC616D0C7BB0073EADD /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F1DCC516D0C7BB0073EADD /* QuartzCore.framework */; };
 		B1F1DCC816D0C7BB0073EADD /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F1DCC716D0C7BB0073EADD /* OpenGLES.framework */; };
 		B1F1DCCA16D0C7BB0073EADD /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1F1DCC916D0C7BB0073EADD /* OpenAL.framework */; };
@@ -310,15 +314,19 @@
 		B1F1E05116D0C8090073EADD /* yulei1.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F1DFEE16D0C8090073EADD /* yulei1.png */; };
 		B1F1E05216D0C8090073EADD /* yulei1sun.plist in Resources */ = {isa = PBXBuildFile; fileRef = B1F1DFEF16D0C8090073EADD /* yulei1sun.plist */; };
 		B1F1E05316D0C8090073EADD /* yulei1sun.png in Resources */ = {isa = PBXBuildFile; fileRef = B1F1DFF016D0C8090073EADD /* yulei1sun.png */; };
-		B1F1E05616D0C8FC0073EADD /* Flue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F1E05416D0C8FC0073EADD /* Flue.cpp */; };
-		B1F1E05916D0CA030073EADD /* Fish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F1E05716D0CA020073EADD /* Fish.cpp */; };
-		B1F1E05C16D0DA710073EADD /* UINumber.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F1E05A16D0DA710073EADD /* UINumber.cpp */; };
-		B1F1E06316D0E1480073EADD /* UIRollNum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B1F1E06116D0E1470073EADD /* UIRollNum.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B1016B5F16D1FD2F00734879 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameConfig.h; sourceTree = "<group>"; };
 		B13DA43F16D1DB5900BF5AFA /* number.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = number.png; sourceTree = "<group>"; };
+		B1C7511E16D3635000507B16 /* Fish.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Fish.cpp; path = Classes/Fish.cpp; sourceTree = "<group>"; };
+		B1C7511F16D3635000507B16 /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Fish.h; path = Classes/Fish.h; sourceTree = "<group>"; };
+		B1C7512016D3635000507B16 /* Flue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Flue.cpp; path = Classes/Flue.cpp; sourceTree = "<group>"; };
+		B1C7512116D3635000507B16 /* Flue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Flue.h; path = Classes/Flue.h; sourceTree = "<group>"; };
+		B1C7512216D3635000507B16 /* GameConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameConfig.h; path = Classes/GameConfig.h; sourceTree = "<group>"; };
+		B1C7512316D3635000507B16 /* UINumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UINumber.cpp; path = Classes/UINumber.cpp; sourceTree = "<group>"; };
+		B1C7512416D3635000507B16 /* UINumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UINumber.h; path = Classes/UINumber.h; sourceTree = "<group>"; };
+		B1C7512516D3635000507B16 /* UIRollNum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIRollNum.cpp; path = Classes/UIRollNum.cpp; sourceTree = "<group>"; };
+		B1C7512616D3635000507B16 /* UIRollNum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIRollNum.h; path = Classes/UIRollNum.h; sourceTree = "<group>"; };
 		B1F1DCC116D0C7BB0073EADD /* Fishing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fishing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1F1DCC516D0C7BB0073EADD /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		B1F1DCC716D0C7BB0073EADD /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -865,14 +873,6 @@
 		B1F1DFEE16D0C8090073EADD /* yulei1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulei1.png; sourceTree = "<group>"; };
 		B1F1DFEF16D0C8090073EADD /* yulei1sun.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = yulei1sun.plist; sourceTree = "<group>"; };
 		B1F1DFF016D0C8090073EADD /* yulei1sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yulei1sun.png; sourceTree = "<group>"; };
-		B1F1E05416D0C8FC0073EADD /* Flue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Flue.cpp; sourceTree = "<group>"; };
-		B1F1E05516D0C8FC0073EADD /* Flue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flue.h; sourceTree = "<group>"; };
-		B1F1E05716D0CA020073EADD /* Fish.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fish.cpp; sourceTree = "<group>"; };
-		B1F1E05816D0CA030073EADD /* Fish.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fish.h; sourceTree = "<group>"; };
-		B1F1E05A16D0DA710073EADD /* UINumber.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UINumber.cpp; sourceTree = "<group>"; };
-		B1F1E05B16D0DA710073EADD /* UINumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINumber.h; sourceTree = "<group>"; };
-		B1F1E06116D0E1470073EADD /* UIRollNum.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIRollNum.cpp; sourceTree = "<group>"; };
-		B1F1E06216D0E1470073EADD /* UIRollNum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRollNum.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1807,19 +1807,19 @@
 		B1F1DF7F16D0C7BF0073EADD /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B1C7511E16D3635000507B16 /* Fish.cpp */,
+				B1C7511F16D3635000507B16 /* Fish.h */,
+				B1C7512016D3635000507B16 /* Flue.cpp */,
+				B1C7512116D3635000507B16 /* Flue.h */,
+				B1C7512216D3635000507B16 /* GameConfig.h */,
+				B1C7512316D3635000507B16 /* UINumber.cpp */,
+				B1C7512416D3635000507B16 /* UINumber.h */,
+				B1C7512516D3635000507B16 /* UIRollNum.cpp */,
+				B1C7512616D3635000507B16 /* UIRollNum.h */,
 				B1F1DF8016D0C7BF0073EADD /* AppDelegate.h */,
 				B1F1DF8116D0C7BF0073EADD /* AppDelegate.cpp */,
 				B1F1DF8316D0C7BF0073EADD /* HelloWorldScene.h */,
-				B1016B5F16D1FD2F00734879 /* GameConfig.h */,
 				B1F1DF8416D0C7BF0073EADD /* HelloWorldScene.cpp */,
-				B1F1E05416D0C8FC0073EADD /* Flue.cpp */,
-				B1F1E05716D0CA020073EADD /* Fish.cpp */,
-				B1F1E05A16D0DA710073EADD /* UINumber.cpp */,
-				B1F1E05B16D0DA710073EADD /* UINumber.h */,
-				B1F1E06116D0E1470073EADD /* UIRollNum.cpp */,
-				B1F1E06216D0E1470073EADD /* UIRollNum.h */,
-				B1F1E05816D0CA030073EADD /* Fish.h */,
-				B1F1E05516D0C8FC0073EADD /* Flue.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -2302,10 +2302,10 @@
 				B1F1DF7616D0C7BF0073EADD /* CCPhysicsSprite.cpp in Sources */,
 				B1F1DF8216D0C7BF0073EADD /* AppDelegate.cpp in Sources */,
 				B1F1DF8516D0C7BF0073EADD /* HelloWorldScene.cpp in Sources */,
-				B1F1E05616D0C8FC0073EADD /* Flue.cpp in Sources */,
-				B1F1E05916D0CA030073EADD /* Fish.cpp in Sources */,
-				B1F1E05C16D0DA710073EADD /* UINumber.cpp in Sources */,
-				B1F1E06316D0E1480073EADD /* UIRollNum.cpp in Sources */,
+				B1C7512716D3635000507B16 /* Fish.cpp in Sources */,
+				B1C7512816D3635000507B16 /* Flue.cpp in Sources */,
+				B1C7512916D3635000507B16 /* UINumber.cpp in Sources */,
+				B1C7512A16D3635000507B16 /* UIRollNum.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
