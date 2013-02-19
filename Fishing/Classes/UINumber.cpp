@@ -2,7 +2,7 @@
 //  UINumber.cpp
 //  Fishing
 //
-//  Created by 朱亚斌 on 13-2-17.
+//  Created by Albin Zhu on 13-2-17.
 //
 //
 

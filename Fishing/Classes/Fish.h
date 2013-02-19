@@ -2,7 +2,7 @@
 //  Fish.h
 //  Fishing
 //
-//  Created by 朱亚斌 on 13-2-17.
+//  Created by Albin Zhu on 13-2-17.
 //
 //  这个名字我会起，鱼，没查字典，英语差真是硬伤啊，加油！
 //

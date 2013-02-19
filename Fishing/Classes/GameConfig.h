@@ -2,7 +2,7 @@
 //  GameConfig.h
 //  Fishing
 //
-//  Created by 朱亚斌 on 13-2-18.
+//  Created by Albin Zhu on 13-2-18.
 //
 //
 
