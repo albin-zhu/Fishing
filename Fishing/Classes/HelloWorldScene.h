@@ -14,6 +14,7 @@ public:
     CREATE_FUNC(HelloWorld);
     
     virtual void ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent);
+    virtual void ccTouchesMoved(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent);
     virtual void ccTouchesEnded(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent);
     
 private:
@@ -29,6 +30,7 @@ private:
     cocos2d::CCSprite *engryPointer;
     
 private:
+    void turnGun(cocos2d::CCPoint &pos);
     void loadTexture();
     void initUITab();
     void addFish();

@@ -2,8 +2,8 @@
 #include "SimpleAudioEngine.h"
 #include "GameConfig.h"
 
-#define MAX_ENEMY 15
-#define MOVESPEED 5
+#define MAX_ENEMY 50
+#define MOVESPEED 15
 
 #define KProgressTag 100
 
@@ -256,12 +256,8 @@ void HelloWorld::addFish()
     fishSheet->addChild(fish);
 }
 
-void HelloWorld::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
+void HelloWorld::turnGun(cocos2d::CCPoint &pos)
 {
-    CCTouch* touch = (CCTouch*)pTouches->anyObject();
-    CCPoint pos = touch->getLocationInView();
-    pos = CCDirector::sharedDirector()->convertToGL(pos);
-    gun->setDisplayFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("actor_cannon1_72.png"));
     float angle = (pos.y - gun->getPosition().y) / (pos.x - gun->getPosition().x);
     angle = atanf(angle) / M_PI * 180;;
     
@@ -273,6 +269,24 @@ void HelloWorld::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEve
     {
         gun->setRotation(90 - angle);
     }
+}
+
+void HelloWorld::ccTouchesBegan(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
+{
+    CCTouch* touch = (CCTouch*)pTouches->anyObject();
+    CCPoint pos = touch->getLocationInView();
+    pos = CCDirector::sharedDirector()->convertToGL(pos);
+    gun->setDisplayFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("actor_cannon1_72.png"));
+    this->turnGun(pos);
+}
+
+void HelloWorld::ccTouchesMoved(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
+{
+    CCTouch* touch = (CCTouch*)pTouches->anyObject();
+    CCPoint pos = touch->getLocationInView();
+    pos = CCDirector::sharedDirector()->convertToGL(pos);
+    gun->setDisplayFrame(CCSpriteFrameCache::sharedSpriteFrameCache()->spriteFrameByName("actor_cannon1_72.png"));
+    this->turnGun(pos);
 }
 
 void HelloWorld::ccTouchesEnded(cocos2d::CCSet *pTouches, cocos2d::CCEvent *pEvent)
